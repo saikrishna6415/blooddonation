@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    register
+{% endblock %}
+
+{% block main %}
+<article>
+    <heading>
+    <h1>  DONORS FOUND</h1>
+    </heading>
+     <div>
+    <table class="donors" id="donors">
+        <thead>
+            <tr>
+                <th>Name </th>
+                <th>bloodgroup</th>
+                <th>mobile</th>
+                <th>address</th>
+                <th>district</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for donor in peoplefound %}
+                <tr>
+                    <td>{{ donor.username }}</td>
+                    <td>{{ donor.bloodgroup }}</td>
+                    <td>{{ donor.mobile }}</td>
+                    <td>{{ donor.address }}</td>
+                    <td>{{ donor.district }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+
+  </article>
+{% endblock %}

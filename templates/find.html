@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    find
+{% endblock %}
+
+{% block main %}
+
+
+  <article>
+    <heading>
+    <h1>  Find a blood donor</h1>
+    </heading>
+     <div>
+  <form action="/find" method="post">
+
+     <label for="bloodgroup">Bloodgroup</label><br>
+
+    <select id="bloodgroup" name="bloodgroup"><br>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="AB-">AB-</option>
+       <option value="AB+">AB+</option>
+      <option value="A1B+">A1B+</option>
+      <option value="A1B-">A1B-</option>
+      <option value="A2B+">A2B+</option>
+       <option value="A2B-">A2B-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+
+    </select>
+
+
+
+    <label for="address">Address</label><br>
+    <input type="text" id="address" name="address"><br>
+
+    <label for="district">District</label><br>
+    <input type="text" id="district" name="district"><br>
+    <input type="submit" value="Find a donor">
+  </form>
+
+  </article>
+{% endblock %}

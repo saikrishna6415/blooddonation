@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    bloodrequested
+{% endblock %}
+
+{% block main %}
+
+  <article>
+    <heading>
+    <h1>  BLOOD REQUIRED</h1>
+    </heading>
+     <div>
+    <table class="blood-requested" id="bloodrequested">
+        <thead>
+            <tr>
+                <th>patientame </th>
+                <th>bloodgroup</th>
+                <th>mobile</th>
+                <th>address</th>
+                <th>district</th>
+                <th>hospital name and address</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for bloodrequested in bloodrequested %}
+                <tr>
+                    <td>{{ bloodrequested.patientname }}</td>
+                    <td>{{ bloodrequested.bloodgroup }}</td>
+                    <td>{{ bloodrequested.mobile }}</td>
+
+                    <td>{{ bloodrequested.address }}</td>
+                    <td>{{ bloodrequested.district }}</td>
+                    <td>{{ bloodrequested.hospital_name }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </form>
+</div>
+  </article>
+{% endblock %}

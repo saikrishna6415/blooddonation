@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    requests
+{% endblock %}
+
+{% block main %}
+
+
+  <article>
+    <heading>
+    <h1>  POST BLOOD REQUEST</h1>
+    </heading>
+     <div>
+  <form action="/requests" method="post">
+    <label for="patientname">patientname</label>
+    <input type="text" id="patientname" name="patientname">
+     <label for="bloodgroup">Bloodgroup</label>
+    <select  id= "bloodgroup"name= bloodgroup>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="AB-">AB-</option>
+       <option value="AB+">AB+</option>
+      <option value="A1B+">A1B+</option>
+      <option value="A1B-">A1B-</option>
+      <option value="A2B+">A2B+</option>
+       <option value="A2B-">A2B-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+
+    </select>
+
+    <label for="mobile">Mobile</label>
+    <input type="number" pattern="{0-9}{10}" id="mobile" name="mobile">
+
+    <label for="address">Address</label>
+    <input type="text" id="address" name="address">
+
+    <label for="district">District</label>
+    <input type="text" id="district" name="district">
+
+
+    <label for="hospitalname">Hospital name and address</label>
+    <input type="text" id="hospital_name" name="hospital_name">
+
+
+
+
+
+    <input type="submit" value="Request">
+  </form>
+</div>
+  </article>
+{% endblock %}

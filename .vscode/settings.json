@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "d:\\blooddonation\\saikrishna6415\\env\\Scripts\\python.exe",
+    "sqltools.connections": [
+        {
+            "database": ".\\blooddonation.db",
+            "dialect": "SQLite",
+            "name": "blood donation"
+        }
+    ]
+}
