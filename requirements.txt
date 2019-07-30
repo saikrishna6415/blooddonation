@@ -1,7 +1,7 @@
 flask
 flask_session
 gunicorn
-flask_sqlalchemy
+SQL
 psycopg2
 request
 cs50
