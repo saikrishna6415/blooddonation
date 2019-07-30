@@ -1,7 +1,7 @@
 flask
 flask_session
 gunicorn
-SQL
+SQLite3
 psycopg2
 request
 cs50
