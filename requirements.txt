@@ -5,3 +5,4 @@ SQLite3
 psycopg2
 request
 cs50
+SQL
