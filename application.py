@@ -85,7 +85,7 @@ def register():
             return "username taken"
 
             # Display a flash message
-            flash("registered! Please login ") 
+        flash("registered! Please login ") 
 
         return redirect("/")
 
