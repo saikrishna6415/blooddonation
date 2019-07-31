@@ -85,7 +85,7 @@ def register():
             #     return apology("username taken", 400)
 
             # Display a flash message
-            Flask("registered! Please login ") 
+            flash("registered! Please login ") 
 
         return redirect("/")
 
