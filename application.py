@@ -82,7 +82,7 @@ def register():
 
         # unique username constraint violated?
         if not donors:
-                 return "username taken"
+            return "username taken"
 
             # Display a flash message
             flash("registered! Please login ") 
