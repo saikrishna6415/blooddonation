@@ -14,9 +14,10 @@
      <div>
   <form action="/requests" method="post">
     <label for="patientname">patientname</label>
-    <input type="text" id="patientname" name="patientname">
+    <input type="text" id="patientname" name="patientname"required>
      <label for="bloodgroup">Bloodgroup</label>
-    <select  id= "bloodgroup"name= bloodgroup>
+    <select  id= "bloodgroup"name= "bloodgroup"required>
+        <option selected="true"disabled>select blood group</option>
       <option value="A+">A+</option>
       <option value="A-">A-</option>
       <option value="B+">B+</option>
@@ -33,17 +34,17 @@
     </select>
 
     <label for="mobile">Mobile</label>
-    <input type="number" pattern="{0-9}{10}" id="mobile" name="mobile">
+    <input type="number" pattern="{0-9}{10}" id="mobile" name="mobile"required>
 
     <label for="address">Address</label>
-    <input type="text" id="address" name="address">
+    <input type="text" id="address" name="address"required>
 
     <label for="district">District</label>
-    <input type="text" id="district" name="district">
+    <input type="text" id="district" name="district"required>
 
 
     <label for="hospitalname">Hospital name and address</label>
-    <input type="text" id="hospital_name" name="hospital_name">
+    <input type="text" id="hospital_name" name="hospital_name"required>
 
 
 
