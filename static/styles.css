@@ -21,7 +21,7 @@ body{
 
     /* Set black background color, white text and some padding */
     footer {
-      background-color: red;
+      background-color: black;
       color:white;
       padding: 15px;
     }
